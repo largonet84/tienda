@@ -1,0 +1,29 @@
+/* src/app/product-list/product-list.component.css */
+.product-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product-card img {
+    width: 100%;
+  }
+  
+  .product-card h4 {
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 1.2em;
+    color: #ff6f61;
+  }
+  

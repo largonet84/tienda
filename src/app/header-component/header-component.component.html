@@ -1,0 +1,18 @@
+<!-- src/app/header/header.component.html -->
+<header>
+    <div class="logo">
+      <h1>Tienda Online</h1>
+      <img src="images/logo033_mini.png" alt="Logo de la Tienda" class="logo-img"/>
+    </div>
+    <div>
+      <input type="text" placeholder="Buscar productos..." />
+      <button>Buscar</button>
+    </div>
+    <nav>
+      <ul>
+        <li *ngFor="let link of menuLinks"><a href="#">{{ link }}</a></li>
+      </ul>
+    </nav>
+    <button class="cart">🛒</button>
+  </header>
+  

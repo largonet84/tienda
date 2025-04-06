@@ -1,0 +1,16 @@
+/* src/app/main/main.component.css */
+main {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
