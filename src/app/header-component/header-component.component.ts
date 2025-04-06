@@ -9,6 +9,6 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponentComponent {
   /* agregado */ 
-  menuLinks = ['Inicio', 'Nosotros', 'Tienda', 'Ayuda'];
+/*  menuLinks = ['Inicio', 'Nosotros', 'Tienda', 'Ayuda']; */
   /* agregado */
 }
