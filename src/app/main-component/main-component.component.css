@@ -30,6 +30,7 @@ main {
   .main-description {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    color: black;
   }
   
   .shop-now-button {
@@ -44,5 +45,14 @@ main {
   
   .shop-now-button:hover {
     background-color: #0056b3;
+  }
+  
+  .main-bg {
+    background-image: url('http://localhost:4200/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 4rem 2rem;
   }
   

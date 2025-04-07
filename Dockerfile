@@ -1,21 +1,13 @@
 FROM node:22.14.0 as build
-
 WORKDIR /app
-
+# Create app directory
+WORKDIR /usr/src/app
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
-
 RUN npm install
-
-RUN npm install -g @angular/cli 
-
-RUN ng add @ng-bootstrap/ng-bootstrap
-
+# Bundle app source
 COPY . .
-
-RUN ng build --configuration=production
-
-FROM nginx:latest
-
-COPY --from=build app/dist/tienda /usr/share/nginx/html
-
-EXPOSE 80
+# Define port to expose application for the outside world.
+EXPOSE 8080
+CMD [ "ng", "serve" ]
